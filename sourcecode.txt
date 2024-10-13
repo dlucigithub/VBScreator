@@ -1,0 +1,29 @@
+MIT License is applied to the following.
+
+
+def create_vbs_script():
+    # Ask for user inputs
+    window_type = input("Enter the window type (0 = OK button, 1 = OK/Cancel, 2 = Abort/Retry/Ignore, 3 = Yes/No/Cancel, 4 = Yes/No, 5 = Retry/Cancel): ")
+    title = input("Enter the title of the message box: ")
+    message = input("Enter the message you want to display: ")
+    repeat_count = int(input("How many times should this message repeat? "))
+
+    # Create the VBS content
+    vbs_content = ""
+    for _ in range(repeat_count):
+        vbs_content += f'MsgBox "{message}", {window_type}, "{title}"\n'
+
+    # Save the content to a .vbs file
+    file_name = input("Enter the name of the .vbs file (without extension): ")
+    with open(f"{file_name}.vbs", "w") as file:
+        file.write(vbs_content)
+    
+    print(f"{file_name}.vbs has been created!")
+
+# Main loop to allow multiple scripts to be created
+while True:
+    create_vbs_script()
+    another = input("Do you want to create another .vbs script? (y/n): ").strip().lower()
+    if another != 'y':
+        print("Exiting the script creator.")
+        break

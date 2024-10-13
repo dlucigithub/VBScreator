@@ -1,0 +1,34 @@
+This Python script allows you to create a **VBS (Visual Basic Script)** file which can be outputted with various customizable message box options. These are the step-by-step guidelines on how to use the script:
+
+### How to Use the Script
+
+1. **Run the Script**:
+   When you run the script, it will ask you to input some entries based on how you want your message box to be customized.
+
+2. **Choose the Message Box Type":
+You will have to specify a **window type**, which determines the buttons you are going to have in the message box. Here are some of them:
+     - **0** = OK button
+     - **1** = OK/Cancel
+     - **2** = Abort/Retry/Ignore
+     - **3** = Yes/No/Cancel
+     - **4** = Yes/No
+- **5** = Retry/Cancel
+  Click on a number that indicates your choice.
+
+3. **Enter the Title**
+  The dialog will then ask you to **enter the title** for the message box. The title will appear at the top of the window for the message box.
+
+4. **Enter the Message:**
+- Next, you will be prompted to enter a **message**. This is the text you want that should appear in the message box.
+
+5. **Enter Repeat Count**:
+   Type in the number of times you want the message box to appear. This is your **repeat count**.
+
+6. **Save the Script**
+- The script will ask you for a **filename**, to name the new `.vbs` file (without the extension). It will then save the script with that file name you enter and append the `.vbs` extension.
+   - The script will save a `.vbs` file with the contents you specified which you can then double-click to run and display the message boxes.
+7. **Create Another Script or Quit**:
+- Once you've made the `.vbs` file, the software will ask you whether you want to make another one. Type in **`y`** if you want to make another script or **`n`** if you want to quit out of the program.
+   - If you select the latter and decide not to make another script the program will be complete and you will see a prompt stating, **"Exiting the script creator."**
+ 
+ You can now open your newly created `.vbs` file to display a customised message box on your computer.
